@@ -1,0 +1,26 @@
+.calendar__day {
+  background-color: transparentize(white, 0.8);
+  width: 18rem;
+  height: 14rem;
+  box-sizing: border-box;
+  margin: 2px;
+  border: 1px black solid;
+  padding: 1rem;
+  font-size: 3rem;
+    &_empty{
+        border: none;
+    }
+
+    &_scaled{ 
+        transform: scale(2); /* Equal to scaleX(0.7) scaleY(0.7) */
+        //background: red;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .calendar__day{
+        width: 100%;
+        display: block;
+      }
+}
+

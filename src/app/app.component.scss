@@ -1,0 +1,16 @@
+
+.month {
+    height: 100%;
+}
+
+.week {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media all and (max-width: 800px) {
+    .week {
+        display: block;
+    }
+}
