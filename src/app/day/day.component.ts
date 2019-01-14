@@ -1,4 +1,11 @@
-import { Component, OnInit, Input, ChangeDetectorRef, NgZone } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ChangeDetectorRef,
+  NgZone,
+  SimpleChanges
+} from '@angular/core';
 
 @Component({
   selector: 'app-day',
@@ -10,14 +17,17 @@ export class DayComponent implements OnInit {
   @Input()
   day: number;
 
-  isScaled: boolean = false;
+  isScaled: any;
 
-  constructor(private cgangeDetector: ChangeDetectorRef) { }
-
-  ngOnInit() {
+  constructor(private cgangeDetector: ChangeDetectorRef) {
+    this.isScaled = false;
   }
 
-  scale() { 
+  ngOnInit() {
+
+  }
+
+  scale() {
     this.isScaled = !this.isScaled;
   };
 

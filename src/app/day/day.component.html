@@ -1,4 +1,290 @@
+<!-- <div class="calendar__day" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled, 
+'calendar__day_empty' : day === 0, 
+'calendar__day_fullday' : day > 0 && day %2  > 0,
+'calendar__day_weekend': day > 0 && day %2  === 0,
+'calendar__day_parttime': day > 18 && day % 2  === 0 }">
+  <div class="calendar__day__content" *ngIf="day > 0">
+    <div>
+      <div>{{day}}.02 суббота</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div> -->
 
-<div class="calendar__day" [ngClass]="{'calendar__day_scaled' : isScaled}" (click)="scale()">
-  <div *ngIf="day > 0">{{day}}</div>
+<div class="calendar__day calendar__day_empty"></div>
+<div class="calendar__day calendar__day_empty"></div>
+
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
 </div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>02.02 Четверг</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/verfi_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_weekend" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>Выходной</div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_parttime" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>04.02 суббота</div>
+      <div>8:00-16:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+
+    <div style="font-size: 4.5rem;">8:00-21:00</div>
+
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_weekend" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div style="font-size: 4.5rem;">Выходной</div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>07.02 вторник</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/verfi_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_parttime" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>08.02 среда</div>
+      <div>16:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>09.02 Четверг</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_parttime" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>10.02 пятница</div>
+      <div>16:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_weekend" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>11.02 суббота</div>
+      <div>Выходной</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+<div class="calendar__day calendar__day_fullday" (click)="scale()" [ngClass]="{'calendar__day_scaled' : isScaled}">
+  <div class="calendar__day__content">
+    <div>
+      <div>01.02 среда</div>
+      <div>8:00-21:00</div>
+    </div>
+    <div><img src="/assets/bz_logo.png" /></div>
+  </div>
+</div>
+
+<div class="calendar__day calendar__day_empty"></div>
+<div class="calendar__day calendar__day_empty"></div>
